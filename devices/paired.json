@@ -1,0 +1,128 @@
+{
+  "ad561a876b4e5aba4708f3fc28982325aba80e94af15ded964a3fcdd5fddf838": {
+    "deviceId": "ad561a876b4e5aba4708f3fc28982325aba80e94af15ded964a3fcdd5fddf838",
+    "publicKey": "kw8emvT8PQOlUU3WgfgxbcYDwAwaoqjSJP3UO4DuBUE",
+    "platform": "Win32",
+    "clientId": "openclaw-control-ui",
+    "clientMode": "webchat",
+    "role": "operator",
+    "roles": [
+      "operator"
+    ],
+    "scopes": [
+      "operator.admin",
+      "operator.approvals",
+      "operator.pairing"
+    ],
+    "approvedScopes": [
+      "operator.admin",
+      "operator.approvals",
+      "operator.pairing"
+    ],
+    "tokens": {
+      "operator": {
+        "token": "cf8f3LwTlL8NEXDNKIm6Y5iRMNvwQFKC4uKzOLUeNMQ",
+        "role": "operator",
+        "scopes": [
+          "operator.admin",
+          "operator.approvals",
+          "operator.pairing",
+          "operator.read",
+          "operator.write"
+        ],
+        "createdAtMs": 1778593556467,
+        "lastUsedAtMs": 1778597110971
+      }
+    },
+    "createdAtMs": 1778593556467,
+    "approvedAtMs": 1778593556467
+  },
+  "a418548970c26f5da8e616d7543fd251ed73e818c2a6952100059aa13e25cea8": {
+    "deviceId": "a418548970c26f5da8e616d7543fd251ed73e818c2a6952100059aa13e25cea8",
+    "publicKey": "s8vxtUrwIagnhQgkMWCgA4lk5xw-cV2zVaychpjVU4k",
+    "platform": "win32",
+    "clientId": "cli",
+    "clientMode": "cli",
+    "role": "operator",
+    "roles": [
+      "operator"
+    ],
+    "scopes": [
+      "operator.admin",
+      "operator.read",
+      "operator.write",
+      "operator.approvals",
+      "operator.pairing",
+      "operator.talk.secrets"
+    ],
+    "approvedScopes": [
+      "operator.admin",
+      "operator.read",
+      "operator.write",
+      "operator.approvals",
+      "operator.pairing",
+      "operator.talk.secrets"
+    ],
+    "tokens": {
+      "operator": {
+        "token": "pCfwpzH2AVk6EPl6NNNshsK5k1ZPH559OFGVYF8R1hw",
+        "role": "operator",
+        "scopes": [
+          "operator.admin",
+          "operator.approvals",
+          "operator.pairing",
+          "operator.read",
+          "operator.talk.secrets",
+          "operator.write"
+        ],
+        "createdAtMs": 1778593972426
+      }
+    },
+    "createdAtMs": 1778593972426,
+    "approvedAtMs": 1778593972426
+  },
+  "a5a00f56d8538b5feaf0c764aba21aa07c3213a85bf4bcd093f72c817bfcbe93": {
+    "deviceId": "a5a00f56d8538b5feaf0c764aba21aa07c3213a85bf4bcd093f72c817bfcbe93",
+    "publicKey": "JzgQHcrteTVZEfRx9hoCtcPKxmv0YYdMoLNmUepC8uM",
+    "platform": "win32",
+    "clientId": "cli",
+    "clientMode": "probe",
+    "role": "operator",
+    "roles": [
+      "operator"
+    ],
+    "scopes": [
+      "operator.admin",
+      "operator.read",
+      "operator.write",
+      "operator.approvals",
+      "operator.pairing",
+      "operator.talk.secrets"
+    ],
+    "approvedScopes": [
+      "operator.admin",
+      "operator.read",
+      "operator.write",
+      "operator.approvals",
+      "operator.pairing",
+      "operator.talk.secrets"
+    ],
+    "tokens": {
+      "operator": {
+        "token": "5sNlPSnC_tVIjmkE_5tCNXSbK2CjYjoK1Z1D9wgIF2o",
+        "role": "operator",
+        "scopes": [
+          "operator.admin",
+          "operator.approvals",
+          "operator.pairing",
+          "operator.read",
+          "operator.talk.secrets",
+          "operator.write"
+        ],
+        "createdAtMs": 1778605592083
+      }
+    },
+    "createdAtMs": 1778605592083,
+    "approvedAtMs": 1778605592083
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "jobs": [
+    {
+      "id": "37ddeaa3-ea4e-4c84-8de7-e09ff6d6cfa3",
+      "agentId": "main",
+      "name": "QClaw进度检查",
+      "enabled": true,
+      "deleteAfterRun": true,
+      "createdAtMs": 1778605592164,
+      "schedule": {
+        "kind": "at",
+        "at": "2026-05-13T02:00:00.000Z"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "请帮用户检查以下两项待办事项的进度：1) 企业微信wecom-cli连接：CLI和Skills已安装完成，还差用户扫码初始化凭证（wecom-cli init），需要提醒用户去服务器扫码。2) GitHub配置同步：Git已安装，仓库已初始化，还差用户在GitHub创建私有仓库（qclaw-config）并把URL发过来。请逐项报告完成状态，未完成的提醒用户操作。要求：(1) 不要回复 HEARTBEAT_OK (2) 不要调用 message 工具 (3) 直接输出提醒文字 (4) 控制在 2-3 句话以内"
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "openclaw-weixin",
+        "to": "o9cq80y82aLcTyvroq2RmOH67xhE@im.wechat",
+        "accountId": "2853e0e3cee8-im-bot"
+      },
+      "state": {}
+    }
+  ]
+}
