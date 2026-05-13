@@ -1,0 +1,350 @@
+{
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "qclaw/modelroute"
+      },
+      "workspace": "C:\\Users\\Administrator\\.qclaw\\workspace",
+      "maxConcurrent": 3,
+      "timeoutSeconds": 72000,
+      "llm": {
+        "idleTimeoutSeconds": 0
+      },
+      "heartbeat": {
+        "isolatedSession": true,
+        "lightContext": true
+      },
+      "compaction": {
+        "mode": "safeguard"
+      }
+    },
+    "list": [
+      {
+        "id": "main",
+        "name": "QClaw",
+        "skills": [
+          "find-skills",
+          "qclaw-rules",
+          "qclaw-env",
+          "qclaw-cron-skill",
+          "qclaw-text-file",
+          "skillhub-preference",
+          "qclaw-skill-creator",
+          "online-search",
+          "wecomcli-contact",
+          "wecomcli-doc",
+          "wecomcli-meeting",
+          "wecomcli-msg",
+          "wecomcli-schedule",
+          "wecomcli-todo",
+          "wecomcli-setup"
+        ]
+      }
+    ]
+  },
+  "skills": {
+    "load": {
+      "extraDirs": [
+        "C:\\Program Files\\QClaw\\resources\\openclaw\\config\\skills",
+        "C:\\Users\\Administrator\\.qclaw\\skills"
+      ]
+    },
+    "entries": {
+      "skill-creator": {
+        "enabled": false
+      },
+      "qclaw-skill-creator": {
+        "enabled": true
+      },
+      "online-search": {
+        "enabled": true
+      },
+      "canvas-design": {
+        "enabled": false
+      },
+      "content-factory": {
+        "enabled": false
+      },
+      "doc-coauthoring": {
+        "enabled": false
+      },
+      "file-skill": {
+        "enabled": false
+      },
+      "frontend-design": {
+        "enabled": false
+      },
+      "github-skill": {
+        "enabled": false
+      },
+      "ima": {
+        "enabled": false
+      },
+      "kc-gui": {
+        "enabled": false
+      },
+      "kdocs": {
+        "enabled": false
+      },
+      "mcp-builder": {
+        "enabled": false
+      },
+      "news-summary": {
+        "enabled": false
+      },
+      "notion": {
+        "enabled": false
+      },
+      "pptx": {
+        "enabled": false
+      },
+      "public-skill": {
+        "enabled": false
+      },
+      "session-logs": {
+        "enabled": false
+      },
+      "skill-vetter": {
+        "enabled": false
+      },
+      "slack-gif-creator": {
+        "enabled": false
+      },
+      "tech-news-digest": {
+        "enabled": false
+      },
+      "tencent-docs": {
+        "enabled": false
+      },
+      "tencent-meeting-mcp": {
+        "enabled": false
+      },
+      "tencent-survey": {
+        "enabled": false
+      },
+      "theme-factory": {
+        "enabled": false
+      },
+      "weather-advisor": {
+        "enabled": false
+      },
+      "web-artifacts-builder": {
+        "enabled": false
+      },
+      "webapp-testing": {
+        "enabled": false
+      },
+      "youdaonote": {
+        "enabled": false
+      },
+      "browser-cdp": {
+        "enabled": false
+      },
+      "weiyun": {
+        "enabled": false
+      },
+      "wecomcli-setup": {
+        "enabled": true
+      },
+      "wendao-partner-qclaw-skill": {
+        "enabled": false
+      },
+      "bdpan-storage": {
+        "enabled": false
+      },
+      "the-entrepreneurship-handbook": {
+        "enabled": false
+      },
+      "flyai": {
+        "enabled": false
+      },
+      "tencent-news": {
+        "enabled": false
+      },
+      "tme-openapi": {
+        "enabled": false
+      },
+      "ai-promotion-query": {
+        "enabled": false
+      },
+      "ai-data-analysis": {
+        "enabled": false
+      },
+      "aippt": {
+        "enabled": false
+      },
+      "创业可以学": {
+        "enabled": false
+      },
+      "wecomcli-contact": {
+        "enabled": true
+      },
+      "wecomcli-doc": {
+        "enabled": true
+      },
+      "wecomcli-meeting": {
+        "enabled": true
+      },
+      "wecomcli-msg": {
+        "enabled": true
+      },
+      "wecomcli-schedule": {
+        "enabled": true
+      },
+      "wecomcli-todo": {
+        "enabled": true
+      }
+    }
+  },
+  "models": {
+    "mode": "merge",
+    "providers": {
+      "qclaw": {
+        "baseUrl": "${QCLAW_LLM_BASE_URL}",
+        "apiKey": "${QCLAW_LLM_API_KEY}",
+        "api": "openai-completions",
+        "models": [
+          {
+            "id": "modelroute",
+            "name": "modelroute",
+            "input": [
+              "text",
+              "image"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "tools": {
+    "web": {
+      "search": {
+        "enabled": true
+      }
+    },
+    "alsoAllow": [
+      "skillhub_install"
+    ]
+  },
+  "browser": {
+    "enabled": true,
+    "defaultProfile": "openclaw",
+    "ssrfPolicy": {
+      "dangerouslyAllowPrivateNetwork": false
+    }
+  },
+  "gateway": {
+    "port": 28789,
+    "mode": "local",
+    "bind": "loopback",
+    "auth": {
+      "mode": "token",
+      "token": "43fed627b4ddcd9decc53d4c7c38260aa07b73e4e885f111"
+    },
+    "controlUi": {
+      "allowedOrigins": [
+        "null",
+        "file://"
+      ]
+    },
+    "tailscale": {
+      "mode": "off",
+      "resetOnExit": false
+    },
+    "http": {
+      "endpoints": {
+        "chatCompletions": {
+          "enabled": true
+        }
+      }
+    }
+  },
+  "channels": {
+    "wechat-access": {
+      "enabled": true,
+      "token": "65fb0dda53f88ee10cf1e952d1ba244b",
+      "wsUrl": "${QCLAW_WECHAT_WS_URL}",
+      "guid": "53aa3ad5eb8ba70615bdebb50a9f317a6dc82069fdd225661bf07815e74b1198",
+      "userId": "2001712385"
+    },
+    "openclaw-weixin": {
+      "enabled": true,
+      "transport": "local"
+    }
+  },
+  "plugins": {
+    "enabled": true,
+    "allow": [
+      "wechat-access",
+      "qclaw-plugin",
+      "lossless-claw",
+      "browser",
+      "memory-core",
+      "openclaw-weixin"
+    ],
+    "slots": {
+      "contextEngine": "lossless-claw"
+    },
+    "load": {
+      "paths": [
+        "C:\\Program Files\\QClaw\\resources\\openclaw\\config\\extensions"
+      ]
+    },
+    "entries": {
+      "wechat-access": {
+        "enabled": true
+      },
+      "qclaw-plugin": {
+        "enabled": true,
+        "config": {}
+      },
+      "lossless-claw": {
+        "enabled": true,
+        "config": {
+          "dbPath": "C:\\Users\\Administrator\\.qclaw\\memory\\lossless\\lcm.db",
+          "contextThreshold": 0.6,
+          "freshTailCount": 16,
+          "incrementalMaxDepth": 5
+        }
+      },
+      "browser": {
+        "enabled": true
+      },
+      "openclaw-weixin": {
+        "enabled": true,
+        "config": {}
+      }
+    }
+  },
+  "messages": {
+    "queue": {
+      "mode": "followup"
+    }
+  },
+  "session": {
+    "reset": {
+      "mode": "idle",
+      "idleMinutes": 525600
+    },
+    "maintenance": {
+      "pruneAfter": "365d",
+      "maxEntries": 1000000,
+      "resetArchiveRetention": false,
+      "rotateBytes": "1gb"
+    },
+    "dmScope": "per-channel-peer"
+  },
+  "meta": {
+    "lastTouchedVersion": "2026.4.21",
+    "lastTouchedAt": "2026-05-12T13:47:46.856Z"
+  },
+  "bindings": [
+    {
+      "agentId": "main",
+      "match": {
+        "channel": "openclaw-weixin",
+        "accountId": "*"
+      }
+    }
+  ]
+}

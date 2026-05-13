@@ -1,0 +1,19 @@
+{
+  "authGatewayBaseUrl": "http://127.0.0.1:19000/proxy",
+  "sharedParams": {
+    "guid": "53aa3ad5eb8ba70615bdebb50a9f317a6dc82069fdd225661bf07815e74b1198",
+    "appVersion": "0.2.16",
+    "appChannel": "5019",
+    "platform": "Qclaw_Win",
+    "sessionId": "50d903d2-6bc3-4845-b3eb-a482a375f657"
+  },
+  "cli": {
+    "nodeBinary": "C:\\Program Files\\QClaw\\resources\\node\\node.exe",
+    "openclawMjs": "C:\\Program Files\\QClaw\\resources\\openclaw\\node_modules\\openclaw\\openclaw.mjs",
+    "pid": 480
+  },
+  "stateDir": "C:\\Users\\Administrator\\.qclaw",
+  "configPath": "C:\\Users\\Administrator\\.qclaw\\openclaw.json",
+  "port": 28789,
+  "platform": "win32"
+}
